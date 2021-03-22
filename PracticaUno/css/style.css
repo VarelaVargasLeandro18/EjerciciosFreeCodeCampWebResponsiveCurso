@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    background-color: rgba(134, 125, 125, 0.116);
+}
+
+
+
+#img-div {
+    margin: 5vw;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+img {
+    width: 100%;
+    /* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size. */
+}
