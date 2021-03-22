@@ -60,15 +60,21 @@ header > p {
   / SECTION /
   ///////////*/
 
+#trribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #tribute-info > h3 {
     text-align: center;
 } 
 
 #tribute-info > ul {
     margin: auto 5%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: center; */
     padding-left: 5%;
 }
 
@@ -81,8 +87,9 @@ header > p {
 }
 
 #tribute-info > blockquote {
-    text-align: start;
+    padding-left: 5%;
     font-style: italic;
+    margin-top: 5vw;
 }
 
 #tribute-info > blockquote > cite {
@@ -96,8 +103,14 @@ header > p {
   / FOOTER  /
   ///////////*/
 
+footer {
+    padding: 5vw;
+}
 
-  
+footer > h3 {
+    text-align: center;
+}
+
 /* //// FIN FOOTER //// */
 
 /* =======FIN MAIN========= */
