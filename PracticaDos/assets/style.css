@@ -8,6 +8,7 @@ body {
 }
 
 .flex-form-container {
+    /* TAMAÑO */
     max-width: 75vw;
     height: 100vh;
 
@@ -17,4 +18,17 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+}
+
+.flex-form-container > form {
+    border: 1px solid black;
+
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    /* FLEX */
+    align-self: center;
 }
