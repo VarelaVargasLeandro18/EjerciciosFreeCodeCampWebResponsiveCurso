@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-form-container {
+    max-width: 75vw;
+    height: 100vh;
+
+    /* FLEX */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
