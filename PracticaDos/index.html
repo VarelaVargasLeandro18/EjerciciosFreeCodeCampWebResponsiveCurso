@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     
@@ -10,10 +10,132 @@
     <link rel="stylesheet" href="assets/style.css">
 
     <title>Survey Form</title>
+
 </head>
 <body>
     
-    
+    <div class="flex-form-container">
+
+        <h1 class="title">Varela Vargas Leandro Survey Form</h1>
+
+        <h2><a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">Práctica Número 2</a></h2>
+
+        <p id="description">
+            Este es un formulario de práctica, creado a razón de la realización de las prácticas de <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp</a> en su curso de <a target="_blank" href="https://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web Design</a>.
+        </p>
+
+        <form id="survey-form" action="#">
+
+
+            <label id="name-label" for="nombre">
+                Nombre
+                <input placeholder="Introduzca su nombre" type="text" name="nombre" id="name" minlength="1" maxlength="40" size="25">
+            </label>
+
+            
+            <label id="email-label" for="email">
+                Email
+                <input placeholder="Introduzca su dirección de email" type="email" name="email" id="email" minlength="1" maxlength="40" size="25">
+            </label>
+
+            <label id="number-label" for="number">
+                Edad
+                <input placeholder="Edad" type="number" name="number" id="number" min="1" max="122">
+            </label>
+
+            <label for="dropdown">
+                ¿Qué opción describe mejor su función actual?
+                <select name="funcion" id="dropdown">
+                    <option disabled selected>Seleccione una opción</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="trabajo-fulltime">Trabajador Tiempo Completo</option>
+                    <option value="trabajo-halftime">Trabajador Medio Tiempo</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </label>
+
+            <fieldset>
+
+                <legend>¿Te gustó este formulario?</legend>
+                
+                <label for="definitivamente">
+                    <input type="radio" name="calificacion-frm" id="definitivamente">
+                    Definitivamente
+                </label>
+
+                <label for="talvez">
+                    <input type="radio" name="calificacion-frm" id="talvez">
+                    Tal vez
+                </label>
+
+                <label for="no-estoy-seguro">
+                    <input type="radio" name="calificacion-frm" id="no-estoy-seguro">
+                    No estoy seguro
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>¿Qué lenguajes de programación te gustan más?</legend>
+
+                <label for="python">
+                    <input type="checkbox" name="lenguaje" id="python">
+                    Python
+                </label>
+
+                <label for="java">
+                    <input type="checkbox" name="lenguaje" id="java">
+                    Java
+                </label>
+
+                <label for="c">
+                    <input type="checkbox" name="lenguaje" id="c">
+                    C
+                </label>
+
+                <label for="c++">
+                    <input type="checkbox" name="lenguaje" id="c++">
+                    C++
+                </label>
+
+                <label for="php">
+                    <input type="checkbox" name="lenguaje" id="php">
+                    Php
+                </label>
+
+                <label for="go">
+                    <input type="checkbox" name="lenguaje" id="go">
+                    Go
+                </label>
+
+                <label for="kotlin">
+                    <input type="checkbox" name="lenguaje" id="kotlin">
+                    Kotlin
+                </label>
+
+                <label for="scala">
+                    <input type="checkbox" name="lenguaje" id="scala">
+                    Scala
+                </label>
+
+                <label for="ruby">
+                    <input type="checkbox" name="lenguaje" id="ruby">
+                    Ruby
+                </label>
+
+            </fieldset>
+
+            <label for="comentarios">
+                ¿Algún comentario para hacer?
+                <textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
+            </label>
+
+            <button id="submit" type="submit">Enviar</button>
+
+        </form>
+
+    </div>
     
 </body>
 </html>
