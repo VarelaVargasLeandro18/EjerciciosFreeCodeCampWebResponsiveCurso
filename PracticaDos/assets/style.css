@@ -1,34 +1,21 @@
 * {
     margin: 0;
-}
-
-body {
-    display: flex;
-    justify-content: center;
+    padding: 0;
+    
+    max-width: 100%;
 }
 
 .flex-form-container {
-    /* TAMAÑO */
-    max-width: 75vw;
-    height: 100vh;
 
-    /* FLEX */
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
+    align-items: center;
 
-.flex-form-container > form {
+    max-width: 80vw;
+    margin: 50px auto;
+    padding: 5%;
+    
+
     border: 1px solid black;
-
-    /* FLEX */
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    /* FLEX */
-    align-self: center;
 }
