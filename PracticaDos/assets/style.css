@@ -5,18 +5,39 @@
     flex-wrap: wrap;
 
     margin: 10% 5%;
+    padding: 1.5rem .8rem;
+    background-color: rgba(51, 17, 34, 0.918);
     border: 1px solid black;
 }
 
-.cabecera {
-    margin: 1rem .3rem;
+a {
+    color: wheat;
 }
 
+
 .cabecera > * {
-    margin: .8rem auto;
+    text-align: center;
+    margin: 1rem;
+    color: whitesmoke;
 }
 
 .title {
     font-size: 1.8rem;
     font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.cabecera > h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+
+#survey-form {
+    border: 1px solid black;
 }
