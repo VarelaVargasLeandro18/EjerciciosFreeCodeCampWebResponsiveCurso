@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="assets/style.css">
 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+
     <title>Survey Form</title>
 
 </head>
@@ -19,7 +21,7 @@
     <div class="flex-form-container">
 
         <header class="cabecera">
-            <h1 class="title">Varela Vargas Leandro Survey Form</h1>
+            <h1 id="title">Varela Vargas Leandro Survey Form</h1>
 
             <h2><a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">Práctica Número 2</a></h2>
 
@@ -33,18 +35,18 @@
 
             <label id="name-label" for="nombre">
                 Nombre
-                <input placeholder="Introduzca su nombre" type="text" name="nombre" id="name" minlength="1" maxlength="40" size="25">
+                <input placeholder="Introduzca su nombre" type="text" name="nombre" id="name" minlength="1" maxlength="40" size="25" required>
             </label>
 
             
             <label id="email-label" for="email">
                 Email
-                <input placeholder="Introduzca su dirección de email" type="email" name="email" id="email" minlength="1" maxlength="40" size="25">
+                <input placeholder="Introduzca su dirección de email" type="email" name="email" id="email" minlength="1" maxlength="40" size="25" required>
             </label>
 
             <label id="number-label" for="number">
                 Edad
-                <input placeholder="Edad" type="number" name="number" id="number" min="1" max="122">
+                <input placeholder="Edad" type="number" name="number" id="number" min="1" max="122" required>
             </label>
 
             <label for="dropdown">
@@ -63,17 +65,17 @@
                 <legend>¿Te gustó este formulario?</legend>
                 
                 <label for="definitivamente">
-                    <input type="radio" name="calificacion-frm" id="definitivamente" checked>
+                    <input type="radio" name="calificacion-frm" id="definitivamente" value="definitivamente" checked>
                     Definitivamente
                 </label>
 
                 <label for="talvez">
-                    <input type="radio" name="calificacion-frm" id="talvez">
+                    <input type="radio" name="calificacion-frm" id="talvez" value="talvez">
                     Tal vez
                 </label>
 
                 <label for="no-estoy-seguro">
-                    <input type="radio" name="calificacion-frm" id="no-estoy-seguro">
+                    <input type="radio" name="calificacion-frm" id="no-estoy-seguro" value="noestoyseguro">
                     No estoy seguro
                 </label>
 
@@ -84,47 +86,47 @@
                 <legend>¿Qué lenguajes de programación te gustan más?</legend>
 
                 <label for="python">
-                    <input type="checkbox" name="lenguaje" id="python">
+                    <input type="checkbox" name="lenguaje" id="python" value="python">
                     Python
                 </label>
 
                 <label for="java">
-                    <input type="checkbox" name="lenguaje" id="java">
+                    <input type="checkbox" name="lenguaje" id="java" value="java">
                     Java
                 </label>
 
                 <label for="c">
-                    <input type="checkbox" name="lenguaje" id="c">
+                    <input type="checkbox" name="lenguaje" id="c" value="c">
                     C
                 </label>
 
                 <label for="c++">
-                    <input type="checkbox" name="lenguaje" id="c++">
+                    <input type="checkbox" name="lenguaje" id="c++" value="c++">
                     C++
                 </label>
 
                 <label for="php">
-                    <input type="checkbox" name="lenguaje" id="php">
+                    <input type="checkbox" name="lenguaje" id="php" value="php">
                     Php
                 </label>
 
                 <label for="go">
-                    <input type="checkbox" name="lenguaje" id="go">
+                    <input type="checkbox" name="lenguaje" id="go" value="go">
                     Go
                 </label>
 
                 <label for="kotlin">
-                    <input type="checkbox" name="lenguaje" id="kotlin">
+                    <input type="checkbox" name="lenguaje" id="kotlin" value="kotlin">
                     Kotlin
                 </label>
 
                 <label for="scala">
-                    <input type="checkbox" name="lenguaje" id="scala">
+                    <input type="checkbox" name="lenguaje" id="scala" value="scala">
                     Scala
                 </label>
 
                 <label for="ruby">
-                    <input type="checkbox" name="lenguaje" id="ruby">
+                    <input type="checkbox" name="lenguaje" id="ruby" value="ruby">
                     Ruby
                 </label>
 
