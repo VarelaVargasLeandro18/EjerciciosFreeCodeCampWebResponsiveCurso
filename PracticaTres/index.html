@@ -9,21 +9,36 @@
 </head>
 <body>
     
-    <header id="header">
+    <header 
+        class="header"
+        id="header">
 
-        <img 
-            id="header-img" 
-            class="logo" 
-            src="./assets/images/Icon - Free.png" 
-            alt="Icon">
+        <div class="logo-img-wrapper">
+            <img
+                id="header-img"
+                class="logo"
+                src="./assets/images/Icon - Free.png"
+                alt="Icon">
+            <h1
+                class="header-title">
+                Rey de la Hamburger
+            </h1>
+        </div>
 
-        <h1>Rey de la Hamburger</h1>
-
-        <nav id="nav-bar">
-            <ul>
-                <li><a href="#" class="nav-link">Nuestras Hamburguesas</a></li>
-                <li><a href="#" class="nav-link">Mas sobre nosotros</a></li>
-                <li><a href="#" class="nav-link">Contactanos</a></li>
+        <nav 
+            class="nav-bar"
+            id="nav-bar">
+            <ul
+                class="ul-nav-bar">  
+                <li>
+                    <a href="#" class="nav-link">Nuestras Hamburguesas</a
+                ></li>
+                <li>
+                    <a href="#" class="nav-link">Mas sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contactanos</a>
+                </li>
             </ul>
         </nav>
 
@@ -43,16 +58,18 @@
     </div>
 
     <main>
-        <iframe 
-                id="video"
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/0asPIGtVi8A" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+        <div class="video-container">
+            <iframe
+                    id="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/0asPIGtVi8A"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
 
         <form 
             id="form"

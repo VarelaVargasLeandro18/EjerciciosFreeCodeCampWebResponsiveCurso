@@ -1,7 +1,70 @@
-.logo {
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+img {
     width: 10%;
 }
 
-.card-img > img {
+/* #region  Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(83, 83, 83, 0.1);
+    border-radius: 1em 1em;
+}
+
+.logo-img-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    width: 50%;
+}
+
+.header-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo {
     width: 10%;
+    border: .2em solid grey;
+    margin: 1em;
+    justify-self: start;
+}
+
+.nav-bar {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.ul-nav-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin: .5em;
+}
+/* #endregion */
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .logo-img-wrapper {
+        justify-content: center;
+    }
+
 }
