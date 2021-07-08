@@ -15,14 +15,14 @@ img {
     justify-content: space-between;
 
     background-color: rgba(83, 83, 83, 0.1);
-    border-radius: 1em 1em;
+    border-radius: 1em;
 }
 
 .logo-img-wrapper {
     display: flex;
     justify-content: start;
     align-items: center;
-    
+
     width: 50%;
 }
 
@@ -52,19 +52,77 @@ img {
 .nav-link {
     margin: .5em;
 }
+
 /* #endregion */
 
+.div-explicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    margin: 1em 0;
+}
 
-@media screen and (max-width: 768px) {
-    
+/* #region  Main */
+.main-content,
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #region  Form */
+.main-form {
+    width: 100%;
+}
+
+.novedades-fieldset {
+    border-radius: 1em;
+}
+
+.lbl-email {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.input-email {
+    border-radius: .4em;
+    display: inline-block;
+}
+
+.form-btn {
+    font-weight: bold;
+    background-color: rgba(177, 177, 201, 0.568);
+    height: 3em;
+    border: 1px solid rgb(177, 177, 201);
+    border-radius: .5em;
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #region  Global */
+a,
+a:visited {
+    color: blue;
+}
+
+/* #endregion */
+
+@media screen and (max-width: 1024px) {
+
     .header {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .logo-img-wrapper {
         justify-content: center;
+    }
+
+    .div-explicacion {
+        flex-direction: column;
     }
 
 }

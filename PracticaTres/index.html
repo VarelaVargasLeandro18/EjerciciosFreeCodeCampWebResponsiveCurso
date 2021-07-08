@@ -44,7 +44,9 @@
 
     </header>
 
-    <div id="explicacion">
+    <div
+        class="div-explicacion" 
+        id="explicacion">
         <h2>
             <a 
                 href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">
@@ -57,7 +59,8 @@
         </p>
     </div>
 
-    <main>
+    <main
+        class="main-content">
         <div class="video-container">
             <iframe
                     id="video"
@@ -72,26 +75,32 @@
         </div>
 
         <form 
+            class="main-form"
             id="form"
             action="https://www.freecodecamp.org/email-submit">
 
-            <fieldset>
+            <fieldset
+                class="novedades-fieldset">
                 <legend>Reciba Novedades!</legend>
-                <label for="email">
-                    Email:
+                <label 
+                    class="lbl-email"
+                    for="email">
+                    Email: 
                     <input
+                        class="input-email"
                         type="email"
                         name="email"
                         id="email"
                         placeholder="Ingrese su Email">
                 </label>
                 
-            </fieldset>
-
             <input 
-                id="submit"
-                type="submit"
-                value="Enviar Datos"/>
+            class="form-btn"
+            id="submit"
+            type="submit"
+            value="Enviar Datos"/>
+
+            </fieldset>
 
         </form>
 
