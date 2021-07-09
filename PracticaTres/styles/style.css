@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: linen;
 }
 
 img {
@@ -64,8 +65,7 @@ img {
 }
 
 /* #region  Main */
-.main-content,
-.cards-container {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,54 @@ img {
     border: 1px solid rgb(177, 177, 201);
     border-radius: .5em;
 }
+
 /* #endregion */
+
+    /* #region  Cards */
+    .cards-container {
+        margin: 1em;
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+
+        border-radius: 1em;
+        border: 1px solid black;
+        box-shadow: 5px 5px 15px 0 black;
+    }
+
+    .card:hover {
+        box-shadow: 5px 5px 15px 0 red;
+    }
+
+    .card-description {
+        display: flex;
+        text-align: center;
+    }
+
+    .card-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-btn {
+        text-transform: uppercase;
+        margin: 1em;
+        border-radius: 1em;
+        padding: 1em;
+        background-color: rgba(255, 198, 43, 0.466);
+        border: 1px solid rgb(255, 198, 43);
+        cursor: pointer;
+    }
+
+    .card-btn:hover {
+        box-shadow: 0 0 10px 0 rgba(177, 177, 201, 0.568);
+    }
+    /* #endregion */
 
 /* #endregion */
 

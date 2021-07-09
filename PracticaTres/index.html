@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ES-es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,24 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Product Landing Page</title>
 </head>
+
 <body>
-    
-    <header 
-        class="header"
-        id="header">
+
+    <!-- #region Header -->
+    <header class="header" id="header">
 
         <div class="logo-img-wrapper">
-            <img
-                id="header-img"
-                class="logo"
-                src="./assets/images/Icon - Free.png"
-                alt="Icon">
-            <h1
-                class="header-title">
+            <img id="header-img" class="logo" src="./assets/images/Icon - Free.png" alt="Icon">
+            <h1 class="header-title">
                 Rey de la Hamburger
             </h1>
         </div>
 
-        <nav 
-            class="nav-bar"
-            id="nav-bar">
-            <ul
-                class="ul-nav-bar">  
+        <nav class="nav-bar" id="nav-bar">
+            <ul class="ul-nav-bar">
                 <li>
-                    <a href="#" class="nav-link">Nuestras Hamburguesas</a
-                ></li>
+                    <a href="#" class="nav-link">Nuestras Hamburguesas</a>
+                </li>
                 <li>
                     <a href="#" class="nav-link">Mas sobre nosotros</a>
                 </li>
@@ -43,111 +36,116 @@
         </nav>
 
     </header>
+    <!-- #endregion -->
 
-    <div
-        class="div-explicacion" 
-        id="explicacion">
+    <!-- #region Explicación del Proyecto -->
+    <div class="div-explicacion" id="explicacion">
         <h2>
-            <a 
+            <a
                 href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">
                 Práctica Tres
             </a>
         </h2>
 
         <p id="description">
-            Este es una página de Publicación de Productos de práctica, creado a razón de la realización de las prácticas de <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp</a> en su curso de <a target="_blank" href="https://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web Design</a>.
+            Este es una página de Publicación de Productos de práctica, creado a razón de la realización de las
+            prácticas de <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp</a> en su curso de <a
+                target="_blank" href="https://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web
+                Design</a>.
         </p>
     </div>
+    <!-- #endregion -->
 
-    <main
-        class="main-content">
+    <main class="main">
+
+        <!-- #region Video -->
         <div class="video-container">
-            <iframe
-                    id="video"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/0asPIGtVi8A"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0asPIGtVi8A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
             </iframe>
         </div>
+        <!-- #endregion -->
 
-        <form 
-            class="main-form"
-            id="form"
-            action="https://www.freecodecamp.org/email-submit">
+        <!-- #region Form -->
+        <form class="main-form" id="form" action="https://www.freecodecamp.org/email-submit">
 
-            <fieldset
-                class="novedades-fieldset">
+            <fieldset class="novedades-fieldset">
                 <legend>Reciba Novedades!</legend>
-                <label 
-                    class="lbl-email"
-                    for="email">
-                    Email: 
-                    <input
-                        class="input-email"
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Ingrese su Email">
+                <label class="lbl-email" for="email">
+                    Email:
+                    <input class="input-email" type="email" name="email" id="email" placeholder="Ingrese su Email">
                 </label>
-                
-            <input 
-            class="form-btn"
-            id="submit"
-            type="submit"
-            value="Enviar Datos"/>
+
+                <input class="form-btn" id="submit" type="submit" value="Enviar Datos" />
 
             </fieldset>
 
         </form>
+        <!-- #endregion -->
 
+        <!-- #region Cards -->
         <div class="cards-container">
+
             <div class="card">
                 <div class="card-title">
                     <h3>Patada al Higado</h3>
                 </div>
                 <div class="card-img">
-                    <img 
-                        src="./assets/images/hamburguesas.jpg" 
-                        alt="Pata al Higado"></div>
+                    <img src="./assets/images/hamburguesas.jpg" alt="Pata al Higado">
+                </div>
                 <div class="card-price">
                     <p>$2300</p>
                 </div>
                 <div class="card-description">
                     <p>
-                        Hamburguesa Doble con Cheddar, Huevo Frito, Pepino, Bacon, Cebolla Caramelizada y picante. Acompañada con porción de papas Grandes con Cheddar y Gaseosa a Elección. 
+                        Hamburguesa Doble con Cheddar, Huevo Frito, Pepino, Bacon, Cebolla Caramelizada y picante.
+                        Acompañada con porción de papas Grandes con Cheddar y Gaseosa a Elección.
                     </p>
                 </div>
+
+                <button
+                    href="#" 
+                    class="card-btn">
+                    Pedir
+                </button>
+
             </div>
+
             <div class="card">
                 <div class="card-title">
                     <h3>Revolución Estomacal</h3>
                 </div>
                 <div class="card-img">
-                    <img 
-                        src="./assets/images/hamburguesas.jpg" 
-                        alt="Pata al Higado"></div>
+                    <img src="./assets/images/hamburguesas.jpg" alt="Pata al Higado">
+                </div>
                 <div class="card-price">
                     <p>$5400</p>
                 </div>
                 <div class="card-description">
                     <p>
-                        Hamburguesa Cuadruple con Cheddar, Cuadruple Huevo Frito, Pepino, Bacon, Cebolla Caramelizada, salsa ULTRA picante de la casa.
+                        Hamburguesa Cuadruple con Cheddar, Cuadruple Huevo Frito, Pepino, Bacon, Cebolla Caramelizada,
+                        salsa ULTRA picante de la casa.
                         Porcion de Papas GIGANTE con triple Cheddar, cebolla de verdeo y Bacon con Gaseosa a Elección.
                     </p>
                 </div>
+
+                <button
+                    href="#" 
+                    class="card-btn">
+                    Pedir
+                </button>
+
             </div>
+
             <div class="card">
                 <div class="card-title">
                     <h3>Para peques</h3>
                 </div>
                 <div class="card-img">
-                    <img 
-                        src="./assets/images/hamburguesas.jpg" 
-                        alt="Pata al Higado"></div>
+                    <img src="./assets/images/hamburguesas.jpg" alt="Pata al Higado">
+                </div>
                 <div class="card-price">
                     <p>$900</p>
                 </div>
@@ -156,8 +154,17 @@
                         Hamburguesa chica con papas fritas.
                     </p>
                 </div>
+
+                <button
+                    href="#" 
+                    class="card-btn">
+                    Pedir
+                </button>
+
             </div>
+
         </div>
+        <!-- #endregion -->
 
     </main>
 
@@ -168,4 +175,5 @@
 
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
