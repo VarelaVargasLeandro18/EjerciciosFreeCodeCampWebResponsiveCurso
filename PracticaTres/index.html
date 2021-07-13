@@ -24,13 +24,13 @@
         <nav class="nav-bar" id="nav-bar">
             <ul class="ul-nav-bar">
                 <li>
-                    <a href="#" class="nav-link">Nuestras Hamburguesas</a>
+                    <a href="#nuestras-hamburguesas" class="nav-link">Nuestras Hamburguesas</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Mas sobre nosotros</a>
+                    <a href="#explicacion" class="nav-link">Explicacion</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Contactanos</a>
+                    <a href="#contactanos" class="nav-link">Contactanos</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +47,7 @@
             </a>
         </h2>
 
-        <p id="description">
+        <p id="explicacion">
             Este es una página de Publicación de Productos de práctica, creado a razón de la realización de las
             prácticas de <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp</a> en su curso de <a
                 target="_blank" href="https://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web
@@ -60,7 +60,10 @@
 
         <!-- #region Video -->
         <div class="video-container">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0asPIGtVi8A"
+            <iframe 
+                class="video-frame"
+                id="video"
+                src="https://www.youtube.com/embed/0asPIGtVi8A"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -69,7 +72,13 @@
         <!-- #endregion -->
 
         <!-- #region Form -->
-        <form class="main-form" id="form" action="https://www.freecodecamp.org/email-submit">
+
+        <div id="contactanos"></div>
+
+        <form 
+            class="main-form" 
+            id="form" 
+            action="https://www.freecodecamp.org/email-submit">
 
             <fieldset class="novedades-fieldset">
                 <legend>Reciba Novedades!</legend>
@@ -86,7 +95,9 @@
         <!-- #endregion -->
 
         <!-- #region Cards -->
-        <div class="cards-container">
+        <div
+            id="nuestras-hamburguesas" 
+            class="cards-container">
 
             <div class="card">
                 <div class="card-title">

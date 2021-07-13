@@ -15,8 +15,15 @@ img {
     align-items: center;
     justify-content: space-between;
 
-    background-color: rgba(83, 83, 83, 0.1);
+    background-color: rgb(219, 206, 206);
     border-radius: 1em;
+    position: sticky;
+    top: 0;
+    border-radius: 1em;
+}
+
+.header-title {
+    text-align: center;
 }
 
 .logo-img-wrapper {
@@ -42,12 +49,15 @@ img {
 .nav-bar {
     display: flex;
     justify-self: flex-end;
+    margin: 0;
+    padding: 1em;
 }
 
 .ul-nav-bar {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    margin: 0;
 }
 
 .nav-link {
@@ -60,8 +70,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 1em 0;
+    margin: auto;
 }
 
 /* #region  Main */
@@ -71,40 +80,47 @@ img {
     align-items: center;
 }
 
+.video-frame {
+    width: 90%;
+    margin: 5%;
+    display: inline-block;
+    width: fill;
+}
+
 /* #region  Form */
 .main-form {
-    width: 100%;
+    margin: 0 5vw;
+    padding: 0;
 }
 
 .novedades-fieldset {
-    border-radius: 1em;
+    border-radius: .5em;
+    padding: 0;
 }
 
 .lbl-email {
     display: flex;
     flex-direction: column;
-    margin: 1em 0;
-}
-
-.input-email {
-    border-radius: .4em;
-    display: inline-block;
+    margin: 1em 1em;
+    width: 90%;
 }
 
 .form-btn {
-    font-weight: bold;
-    background-color: rgba(177, 177, 201, 0.568);
-    height: 3em;
-    border: 1px solid rgb(177, 177, 201);
+    margin: 1em;
+    padding: .7em;
     border-radius: .5em;
+    border: 1px solid rgba(177, 177, 201, 0.568);
+    background-color: rgba(255, 198, 43, 0.466);
 }
 
 /* #endregion */
 
     /* #region  Cards */
     .cards-container {
-        margin: 1em;
         display: flex;
+        margin: 1em 0;
+        align-items: center;
+        width: 90vw;
     }
 
     .card {
@@ -112,10 +128,12 @@ img {
         flex-direction: column;
         align-items: center;
         margin: 1em;
-
+        
+        box-sizing: border-box;
         border-radius: 1em;
         border: 1px solid black;
         box-shadow: 5px 5px 15px 0 black;
+        width: 90%;
     }
 
     .card:hover {
@@ -169,6 +187,10 @@ a:visited {
     }
 
     .div-explicacion {
+        flex-direction: column;
+    }
+
+    .cards-container {
         flex-direction: column;
     }
 
